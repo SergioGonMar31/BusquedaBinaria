@@ -9,8 +9,9 @@ public class Principal {
 
 		int num=Depurar.entero("Introduce un número entero", sc);
 
-		if(Busqueda(vector, num)!=-1) {
-			System.out.println("Se encuentra en la posición: "+ Busqueda(vector, num));
+		int resultado=Busqueda(vector, num);
+		if(resultado!=-1) {
+			System.out.println("Se encuentra en la posición: "+ resultado);
 		}else {
 			System.out.println("El número no se encuentra en el vector");
 		}
